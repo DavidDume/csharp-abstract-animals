@@ -16,7 +16,7 @@ namespace csharp_abstract_animals
         {
             Console.WriteLine("Carne");
         }
-        public void FaiVolare()
+        public void Vola()
         {
             Console.WriteLine("STO VOLANDO");
         }

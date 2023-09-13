@@ -4,7 +4,18 @@ using csharp_abstract_animals;
 Cane cane = new Cane();
 
 cane.CosaMangi();
+cane.Dormi();   
 
 Aquila aquila = new Aquila();
+Delfino delfino = new Delfino();
 
-aquila.FaiVolare();
+void FaiNuotare(INuotante animale) {
+    animale.Nuota();
+}
+void FaiVolare(IVolante animale)
+{
+    animale.Vola();
+}
+
+FaiVolare(aquila);
+FaiNuotare(delfino);

@@ -17,6 +17,6 @@ namespace csharp_abstract_animals
             Console.WriteLine("Pesce");
         }
 
-        void INuotante.FaiNuotare() { Console.WriteLine("STO NUOTANDO"); }
+        void INuotante.Nuota() { Console.WriteLine("STO NUOTANDO"); }
     }
 }
