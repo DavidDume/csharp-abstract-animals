@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace csharp_abstract_animals
 {
-    public class Passerotto : Animale
+    public class Passerotto : Animale, IVolante
     {
         public override void Verso()
         {
@@ -14,7 +14,12 @@ namespace csharp_abstract_animals
         }
         public override void CosaMangi()
         {
-            Console.Write("Vermi");
+            Console.WriteLine("Vermi");
+        }
+
+        void IVolante.FaiVolare()
+        {
+            Console.WriteLine("STO VOLANDO");
         }
     }
 }

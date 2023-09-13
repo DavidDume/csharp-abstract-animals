@@ -14,7 +14,7 @@ namespace csharp_abstract_animals
         }
         public override void CosaMangi()
         {
-            Console.Write("Carne");
+            Console.WriteLine("Carne");
         }
     }
 }
